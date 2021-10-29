@@ -47,6 +47,7 @@ header{
 .gallery{
     display: flex;
     justify-content: center;
+    align-items: baseline;
     flex-wrap: wrap;
 }
 
@@ -57,8 +58,8 @@ header{
 }
 
 #logo{
-    animation-duration: 5s;
     animation-name: logo-grow;
+    animation-duration: 5s;
 }
 
 
