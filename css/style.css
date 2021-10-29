@@ -80,12 +80,8 @@ header{
     header{
         flex-direction: row;
         width: 100%;
-        position: fixed;
-        margin-top: -81px;
-    }
-
-    main{
-        margin-top: 81px;
+        position: sticky;
+        top: 0;
     }
 
     nav {
