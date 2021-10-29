@@ -79,30 +79,37 @@ header{
     header{
         flex-direction: row;
         width: 100%;
+        position: fixed;
+        margin-top: -81px;
+    }
+
+    main{
+        margin-top: 81px;
+    }
+
+    nav {
+        margin-left: auto;
     }
 
     .nav_links{
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        margin-left: auto;
+        justify-content: space-between;
     }
 
     .card{
         flex-basis: 250px;
     }
+    
+    .card header{
+        position: static;
+        margin-top: auto;
+    }
 }
 
 @media screen and (prefers-reduced-motion: reduce){
-    @keyframes logo-grow {
-        from{
-            width: 425px;
-            opacity: 1;
-        }
-        to{
-            width: 425px; 
-            opacity: 1;
-        }
+    #logo{
+        animation: none;
     }
 }
 
@@ -116,6 +123,10 @@ header{
         flex-direction: column;
     }
 
+    nav{
+        width: 100%; 
+    }
+
     .nav_links{
         flex-direction: row;
         justify-content: space-around;
@@ -124,6 +135,8 @@ header{
     .pricing{
         flex-direction: row;
         align-items: flex-end;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
 
     .card{
@@ -133,9 +146,11 @@ header{
 
     .gallery{
         visibility: hidden;
+        display: none;
     }
     
     #gallery{
         visibility: hidden;
+        display: none;
     }
 }
